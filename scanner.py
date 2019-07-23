@@ -20,13 +20,13 @@ cv2.imshow("Title",gray)
 
 blurred=cv2.GaussianBlur(gray,(5,5),0)  #(5,5) is the kernel size and 0 is sigma that determines the amount of blur
 
-#cv2.imshow("Blur",blurred)
+cv2.imshow("Blur",blurred)
 
 
 
 edged=cv2.Canny(blurred,30,50)  #30 MinThreshold and 50 is the MaxThreshold
 
-#cv2.imshow("Canny",edged)
+cv2.imshow("Canny",edged)
 
 
 
@@ -70,4 +70,4 @@ dst=cv2.warpPerspective(orig,op,(800,800))
 
 
 
-#cv2.imshow("Scanned",dst)
+cv2.imshow("Scanned",dst)
